@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #1e272e;
+    color: #d2dae2;
+    line-height: 1.8;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
+}
+
+header {
+    background: linear-gradient(45deg, #0a3d62, #1e3799);
+    color: #f5f6fa;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #f5f6fa;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f9ca24;
+    text-shadow: 0 0 5px #f9ca24;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.saga, .enigma, .artefact {
+    background-color: #303952;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.saga:hover, .enigma:hover, .artefact:hover {
+    transform: scale(1.05);
+    background-color: #487eb0;
+}
+
+.saga img, .artefact img {
+    width: 80%; /* Diminuir tamanho da imagem */
+    max-width: 300px; /* Limite de tamanho se necessário */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.saga h2, .artefact h3, .enigma h2 {
+    color: #f5f6fa;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.hidden-section {
+    display: none;
+}
+
+.active-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    background-color: #0a3d62;
+    color: #f5f6fa;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.3);
+}
