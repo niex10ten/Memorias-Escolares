@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal das Crônicas de Nicolas Lopes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crônicas Místicas de Nicolas Lopes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌙 As Crônicas de Nicolas</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="switchSection('sagas')">Sagas</a></li>
+                <li><a href="#" onclick="switchSection('enigmas')">Enigmas</a></li>
+                <li><a href="#" onclick="switchSection('artefatos')">Artefatos Perdidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" id="content">
+        <!-- Seção Sagas -->
+        <section id="sagas" class="active-section">
+            <div class="saga">
+                <img src="Caos.jpg" alt="Foto da turma">
+                <h2>Apenas Caos</h2>
+                <p>Nesse dia a gente foi tirar uma foto da turma com a prof do meu Último ano na escola.</p>
+            </div>
+            <div class="saga">
+                <img src="comedorA.jpg" alt="Comedor de Arroz Doce">
+                <h2>Comedor de Arroz Doce</h2>
+                <p>Ele parece que passa fome quando ta indo comer arroz doce</p>
+            </div>
+            <div class="saga">
+                <img src="Nay.jpg" alt="Nay Nerd">
+                <h2>Nay Nerd</h2>
+                <p>Autoexplicativa</p>
+            </div>
+        </section>
+
+        <!-- Seção Enigmas -->
+        <section id="enigmas" class="hidden-section">
+            <div class="enigma">
+                <h2>O Desafio da Porta que Canta</h2>
+                <p>"Sempre que você a empurra, ela canta em protesto. Quando você a puxa, ela resmunga com mais força. E, quando você finalmente a fecha, ela murmura baixinho. Quem é ela?"</p>
+            </div>
+            <div class="enigma">
+                <h2>O Enigma do Copo Esquecido</h2>
+                <p>"Você o enche de esperança e o deixa sobre a mesa, prometendo que irá bebê-lo. Mas, quando retorna, ele já desapareceu, deixando apenas um anel de saudade. O que é?"</p>
+            </div>
+            <div class="enigma">
+                <h2>O Segredo do Pão de Forma Mágico</h2>
+                <p>"Ele aparece fresco e fofo no seu café da manhã, mas desaparece misteriosamente no jantar, sem deixar vestígios. Onde ele foi?"</p>
+            </div>
+        </section>
+
+        <!-- Seção Artefatos Perdidos -->
+        <section id="artefatos" class="hidden-section">
+            <div class="artefact">
+                <img src="profL.jpg" alt="Prof Linda" onclick="showDetails(1)" tabindex="0">
+                <h3>Professora Mariana</h3>
+                <p>Prof Linda</p>
+            </div>
+            <div class="artefact">
+                <img src="Sorriso.jpg" alt="Sorriso" onclick="showDetails(2)" tabindex="0">
+                <h3>Giovanni Sorrindo</h3>
+                <p>Ô menino sorridente</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Morelli 2024, Nicolas Lopes 3°E - As Crônicas de Nicolas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
